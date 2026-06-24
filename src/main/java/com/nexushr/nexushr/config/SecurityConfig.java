@@ -41,7 +41,7 @@ public class SecurityConfig {
 
         configuration.setAllowedOrigins(
                 List.of(
-                        "https://frontend-l3h3.vercel.app/",
+                        "https://frontend-l3h3.vercel.app",
                         "http://localhost:5173"
                 )
         );

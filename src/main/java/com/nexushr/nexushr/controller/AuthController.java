@@ -51,11 +51,9 @@ public class AuthController {
 
         if (user != null) {
 
-            boolean passwordMatch =
-                    passwordEncoder.matches(
-                            loginUser.getPassword(),
-                            user.getPassword()
-                    );
+        	boolean passwordMatch =
+        	        loginUser.getPassword()
+        	                 .equals(user.getPassword());
 
             System.out.println(
                     "Password Match: "
